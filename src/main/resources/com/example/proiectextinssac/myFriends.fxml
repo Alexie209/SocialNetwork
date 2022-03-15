@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="650.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectextinssac.MyFriendsController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="650.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="51.0" layoutY="18.0" prefHeight="39.0" prefWidth="89.0" text="Friends" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="deleteFriendButton" layoutX="415.0" layoutY="167.0" mnemonicParsing="false" onAction="#deleteFriendButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Delete Friend">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="showFriendsTableView" layoutX="19.0" layoutY="102.0" prefHeight="351.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="usernameTableColumn" prefWidth="111.33333778381348" text="usernameId1" />
+          <TableColumn fx:id="friendshipDateTableColumn" prefWidth="123.99996948242188" text="friendshipDate" />
+            <TableColumn fx:id="usernameTableColumn2" prefWidth="127.3333740234375" text="usernameId2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchTextField" layoutX="413.0" layoutY="132.0" prefHeight="25.0" prefWidth="200.0" promptText="Search" />
+      <Label fx:id="friendsErrorLabel" layoutX="198.0" layoutY="77.0" prefHeight="25.0" prefWidth="192.0" textFill="RED" />
+      <Label fx:id="friendsMessageLabel" layoutX="413.0" layoutY="233.0" prefHeight="25.0" prefWidth="140.0" textFill="RED" />
+      <Button layoutX="413.0" layoutY="292.0" mnemonicParsing="false" onAction="#sendMessageButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Send Message">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="sendMessageTextField" layoutX="413.0" layoutY="259.0" prefHeight="25.0" prefWidth="200.0" promptText="Your Message" />
+      <Button fx:id="friendsBackButton" layoutX="413.0" layoutY="388.0" mnemonicParsing="false" onAction="#friendsBackButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Back">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

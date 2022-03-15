@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectextinssac.FriendRequestsController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="650.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="48.0" layoutY="24.0" text="Friend Requests" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="friendRequestAcceptButton" layoutX="396.0" layoutY="180.0" mnemonicParsing="false" onAction="#friendRequestAcceptButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Accept">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="friendRequestDeclineButton" layoutX="396.0" layoutY="227.0" mnemonicParsing="false" onAction="#friendRequestDeclineButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Decline">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="friendRequestBackButton" layoutX="396.0" layoutY="416.0" mnemonicParsing="false" onAction="#friendRequestBackButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Back">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="friendRequestMessageLabel" layoutX="216.0" layoutY="91.0" prefHeight="25.0" prefWidth="141.0" />
+      <Label fx:id="FriendRequestAcceptLabel" layoutX="396.0" layoutY="102.0" prefHeight="28.0" prefWidth="243.0" textFill="#316e31" />
+      <TextField fx:id="friendRequestsSearchTextField" layoutX="395.0" layoutY="131.0" prefHeight="25.0" prefWidth="200.0" promptText="Search" />
+      <TableView fx:id="friendRequestTableView" layoutX="32.0" layoutY="119.0" prefHeight="333.0" prefWidth="339.0">
+        <columns>
+          <TableColumn fx:id="friendRequestUsernameTableColumn" prefWidth="103.33333969116211" text="usernameId2" />
+          <TableColumn fx:id="friendRequestStatusTableColumn" prefWidth="95.99996948242188" text="status" />
+            <TableColumn fx:id="friendrequestDateTableColumn" prefWidth="139.33335876464844" text="friendRequestDate" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="friendRequestBrandingImage" fitHeight="132.0" fitWidth="150.0" layoutX="429.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/friend-request.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

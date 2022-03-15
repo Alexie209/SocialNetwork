@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="489.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectextinssac.AddFriendController">
+   <children>
+      <TextField fx:id="searchFriendTextField" layoutX="407.0" layoutY="132.0" prefHeight="25.0" prefWidth="200.0" promptText="Search Friend" />
+      <TableView fx:id="addFriendTableView" layoutX="34.0" layoutY="106.0" prefHeight="349.0" prefWidth="349.0" AnchorPane.rightAnchor="267.0">
+        <columns>
+          <TableColumn fx:id="firstNameTableColumn" prefWidth="103.33334219455719" text="firstName" />
+          <TableColumn fx:id="lastNameTableColumn" prefWidth="124.66667938232422" text="lastName" />
+            <TableColumn fx:id="usernameTableColumn" prefWidth="120.66668701171875" text="username" />
+        </columns>
+      </TableView>
+      <Button fx:id="addFriendBackButton" layoutX="407.0" layoutY="382.0" mnemonicParsing="false" onAction="#addFriendBackButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendFriendRequestButton" layoutX="407.0" layoutY="165.0" mnemonicParsing="false" onAction="#sendFriendRequestButtonOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Send FriendRequest">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="75.0" prefWidth="650.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="38.0" layoutY="24.0" prefHeight="25.0" prefWidth="141.0" text="Add Friend" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="addFriendImageView" fitHeight="150.0" fitWidth="200.0" layoutX="407.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/add-friends.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="messageLabel" layoutX="138.0" layoutY="88.0" prefHeight="18.0" prefWidth="445.0" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

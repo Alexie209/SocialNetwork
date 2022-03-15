@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="552.0" prefWidth="653.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectextinssac.UpdateAccountController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="657.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="46.0" layoutY="29.0" prefHeight="28.0" prefWidth="188.0" style="-fx-background-color: #E9615;" text="Update account" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="finishUpdateAccountButton" layoutX="174.0" layoutY="412.0" mnemonicParsing="false" onAction="#finishUpdateAccountButtonOnAction" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Finish" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="backUserUpdateButton" layoutX="174.0" layoutY="452.0" mnemonicParsing="false" onAction="#updateAccountBackButtonOnAction" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #E96151;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessageUserUpdateLabel" layoutX="120.0" layoutY="355.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="newFirstNameTextField" layoutX="174.0" layoutY="125.0" prefHeight="25.0" prefWidth="200.0" promptText="new First Name" />
+      <TextField fx:id="newLastNameTextField" layoutX="174.0" layoutY="189.0" prefHeight="25.0" prefWidth="200.0" promptText="new Last Name" />
+      <TextField fx:id="newUsernameTextField" layoutX="174.0" layoutY="255.0" prefHeight="25.0" prefWidth="200.0" promptText="new Username" />
+      <PasswordField fx:id="newPasswordTextField" layoutX="174.0" layoutY="320.0" prefHeight="25.0" prefWidth="200.0" promptText="new Password" />
+      <Label layoutX="174.0" layoutY="105.0" text="New First Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="170.0" text="New Last Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="235.0" text="New Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="301.0" text="New Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

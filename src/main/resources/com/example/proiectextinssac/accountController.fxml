@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="650.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectextinssac.AccountController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="650.0" style="-fx-background-color: #E96151;">
+         <children>
+            <ImageView fx:id="iconImageView" fitHeight="60.0" fitWidth="134.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/account.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="166.0" layoutY="20.0" prefHeight="41.0" prefWidth="169.0" text="Your Account" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="settingsButton" layoutX="406.0" layoutY="431.0" mnemonicParsing="false" onAction="#settingsButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #947b7b;" text="Settings">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="settingsImageView" fitHeight="21.0" fitWidth="26.0" layoutX="422.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/settings.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="accountControllerLogoutButton" layoutX="406.0" layoutY="275.0" mnemonicParsing="false" onAction="#accountControllerLogoutButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="Log out">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="accountControllerExitButton" layoutX="406.0" layoutY="327.0" mnemonicParsing="false" onAction="#accountControllerExitButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="Exit">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addFriendButton" layoutX="309.0" layoutY="208.0" mnemonicParsing="false" onAction="#addFriendButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="Add Friend">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="friendRequestsButton" layoutX="473.0" layoutY="151.0" mnemonicParsing="false" onAction="#friendRequestsButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="Friend Requests">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="myFriendsButton" layoutX="309.0" layoutY="151.0" mnemonicParsing="false" onAction="#myFriendsButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="My friends">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="messagesButton" layoutX="473.0" layoutY="208.0" mnemonicParsing="false" onAction="#messagesButtonOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #E96151;" text="Messages">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="brandingImageView" fitHeight="248.0" fitWidth="260.0" layoutX="21.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/socialize-icon-1153.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
